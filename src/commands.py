@@ -32,11 +32,9 @@ def winner(player: str, game: str) -> bool:
 
 
 async def get_games(player1: str, player2: str, messages: AsyncIterator) -> List[str]:
-    print("get_games")
     games = []
     async for message in messages:
         text = message.content
-        print(text)
         if is_game(text) and (player1 in text) and (player2 in text):
             games.append(text)
     return games
