@@ -8,9 +8,10 @@
             "name": "run",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}\\src\\main.py",
+            "program": "${workspaceFolder}\\toaster",
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": true,
+            "args": ["run"]
         }
     ]
 }
